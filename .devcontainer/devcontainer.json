@@ -1,0 +1,25 @@
+{
+  "name": "Dev Container",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "nodejs",
+  "remoteUser": "dev",
+  "workspaceFolder": "/workspaces",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "MS-CEINTL.vscode-language-pack-ja",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "ms-vscode.vscode-typescript-next",
+        "pmneo.tsimporter"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "postCreateCommand": "bash ./.devcontainer/post-create.sh"
+}
