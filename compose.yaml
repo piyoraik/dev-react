@@ -6,6 +6,8 @@ services:
     volumes:
       - ./:/workspaces
       - node_modules_volume:/workspaces/node_modules
+    ports:
+      - 5173:5173
     tty: true
     platform: linux/x86_64
 volumes:

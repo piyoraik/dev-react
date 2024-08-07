@@ -4,6 +4,7 @@
   "service": "nodejs",
   "remoteUser": "dev",
   "workspaceFolder": "/workspaces",
+  "forwardPorts": [5173],
   "customizations": {
     "vscode": {
       "extensions": [
